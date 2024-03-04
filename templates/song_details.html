@@ -1,0 +1,19 @@
+<html>
+<head>
+  <title>Spotify Songs: SongDetails</title>
+</head>
+<body>
+  <h1>Spotify Songs: Song Details</h1>
+    
+  {% for row in rows %}
+  <p>Songs: 
+    {{row["song_id"]}}</a></b> |  
+    SongName:
+    {{row["song_title"]}} |
+    Artist:
+    {{ row["artist"]}}
+  </p>
+  {% endfor %}
+
+</body>
+</html>

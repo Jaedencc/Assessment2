@@ -1,0 +1,21 @@
+<html>
+<head>
+  <title>Spotify Songs: SongAttributes</title>
+</head>
+<body>
+  <h1>Spotify Songs: Song attributes</h1>
+    
+  {% for row in rows %}
+  <p>Songs: 
+    <b><a href={{ url_for('favorite_songs')}}>{{row["song_id"]}}</a></b> |  
+    SongName:
+    {{row["song_title"]}} |
+    Key:
+    {{ row["key"]}} |
+    Acousticness:
+    {{row["acousticness"]}}
+  </p>
+  {% endfor %}
+  
+</body>
+</html>

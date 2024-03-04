@@ -1,0 +1,19 @@
+<html>
+<head>
+  <title>Favorite songs</title>
+</head>
+<body>
+  <h1>Favorite songs: 1=like / 0=don't like</h1>
+    
+  {% for row in rows %}
+  <p>Songs: 
+    {{row["song_id"]}}</a></b> |  
+    SongName:
+    {{row["song_title"]}} |
+    like or not:
+    {{ row["mode"]}}
+  </p>
+  {% endfor %}
+
+</body>
+</html>
